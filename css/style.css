@@ -1,0 +1,326 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: din-condensed, sans-serif;
+  }
+  .navbar{
+    position: fixed;
+    height: 100px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: #23231E;
+    width: 100%;
+  }
+  .logo{
+    background: url("../Images/rng-logo-large.png") no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 80px;
+    float: left;
+    margin-left:40px;
+  }
+  .menu{
+    position: absolute;
+    right: 40px;
+  }
+  .menu a{
+    color: #D2C8BE;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+  }
+  .header{
+    width: 100%;
+    height: 450px;
+    background-color: #23231E;
+    background-size: cover;
+    margin-top: 80px;
+  }
+  .header img{
+      height: 500px;
+      margin-left: 200px;
+      margin-top: 60px;
+  }
+  .headerText{
+      float: right;
+      color: #D2C8BE;
+      margin-right: 200px;
+      margin-top: 130px;
+      line-height: 0;
+  }
+  .hamburgerMenu{
+    display: none;
+    position: absolute;
+    right: 20px;
+  }
+  .hamburgerMenu span{
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #D2C8BE;
+  }
+  .contact-info{
+    position: fixed;
+    top: 40%;
+    z-index: 99999;
+    left: 0;
+  }
+  .option{
+    cursor: pointer;
+    position: relative;
+  }
+  .option i{
+    display: block;
+    width: 60px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    background: #B6ACA2;
+    color: #23231E;
+    font-size: 20px;
+  }
+  .option:hover i{
+    color: #9E897A;
+  }
+  .text{
+    position: absolute;
+    font-size: 15px;
+    height: 60px;
+    width: 200px;
+    background: #23231E;
+    top: 0;
+    z-index: -1;
+    left: -140px;
+    color: #D2C8BE;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.6s;
+  }
+  .option:hover .text{
+    left: 60px;
+  }
+  .containerAbout{
+      margin-left: 205px;
+      margin-right: 200px;
+      margin-top: 120px;
+      margin-bottom: 80px;
+  }
+  h1{
+    font-size: 60px;
+    font-family: din-condensed, sans-serif;
+    color: #756653;
+  }
+  h2{
+    font-size: 40px;
+    font-family: din-condensed, sans-serif;
+    color: #23231E;
+  }
+  h3{
+    font-size: 30px;
+    font-family: din-condensed, sans-serif;
+    color: #756653;
+  }
+  h4{
+    font-size: 20px;
+    font-family: din-condensed, sans-serif;
+    color: #23231E;
+  }
+  .about p{
+    font-size: 15px;
+    font-family: proxima-nova, sans-serif;
+    color: #23231E;
+  }
+  .containerSkills {
+      align-items: center;
+      background-color: #D2C8BE;
+      width: 100%;
+      height: 230px;
+  }
+  .skills{
+    display: flex;
+    vertical-align: text-top;
+    justify-content: space-between;
+    margin-left: 205px;
+    margin-right: 200px;
+  }
+  .skills p{
+    font-family: proxima-nova, sans-serif;
+    color: #23231E;
+    font-size: 15px;
+    line-height: 5px;
+    text-align: center;
+  }
+  .research {
+    align-items: center;
+    text-align: center;
+  }
+  .strategy {
+    align-items: center;
+    text-align: center;
+  }
+  .content {
+    align-items: center;
+    text-align: center;
+  }
+  .design {
+    align-items: center;
+    text-align: center;
+  }
+  .containerWork {
+    width: 100%;
+  }
+  .containerWork h1{
+    margin-left: 205px;
+  }
+  .learnButton {
+    background-color: #866552;
+    border: none;
+    width: 120pt;
+    color: #F5F5F5;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 4px;
+    font-family: din condensed, sans-serif;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  .row {
+    display: flex;
+  }
+  .column1 {
+    width: 95%;
+    float: left;
+    margin-left: 205px;
+  }
+  .column2 {
+    width: 5%;
+    float: left;
+    margin-right: 200px;
+    align-items: center;
+  }
+  .column1 p{
+    font-size: 15px;
+    font-family: proxima-nova, sans-serif;
+    color: #23231E;
+  }
+  .otherWork{
+    text-align: left;
+    font-weight: 200;
+    width: 300px;
+    margin-left: 205px;
+  }
+  #containerGrid{
+    margin-left: 200px;
+    margin-right: 200px;
+    display: grid;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "roamingChef comingSoon globetrotter"
+      "roamingChef dhs dhs";
+  }
+  .categoryGridArea{
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+  #roamingChef {
+    grid-area: roamingChef;
+    background-image: url(../Images/roaming\ chef.png);
+    cursor: pointer;
+  }
+  #comingSoon{
+    grid-area: comingSoon;
+    cursor: pointer;
+  }
+  #comingSoon img {
+    height: 250px;
+    width: 350px;
+  }
+  #dhs {
+    grid-area: dhs;
+    background-image: url(../Images/dhs-tile.png);
+    cursor: pointer;
+  }
+  #globetrotter {
+    grid-area: globetrotter;
+    cursor: pointer;
+  }
+  #globetrotter img {
+    height: 250px;
+    width: 350px;
+  }
+  .containerFooter {
+    width: 100%;
+    height: 130px;
+    background-color: #23231E;
+    background-size: cover;
+  }
+  .socialMedia {
+    color: #D2C8BE;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+
+  }
+
+
+
+
+@media only screen and (max-width : 800px) {
+    .navbar{
+      overflow: visible;
+    }
+    .logo{
+      background-image: url(../Images/rng-logo-small.png);
+      width: 80px;
+      align-items: center;
+    }
+    .menu{
+      width: 100%;
+      right: 0;
+      top: 80px;
+      background: #23231E;
+      overflow: hidden;
+      max-height: 0;
+    }
+    .menu a{
+      display: block;
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+    }
+    .hamburgerMenu{
+        display: block;
+        cursor: pointer;
+      }
+    .header{
+        width: 100%;
+        height: 270px;
+        background-color: #23231E;
+        background-size: cover;
+        margin-top: 20px;
+      }
+    .header img{
+          height: 200px;
+          margin-left: 70px;
+          margin-top: 90px;
+      }
+    .headerText{
+          float: right;
+          color: #D2C8BE;
+          margin-right: 50px;
+          margin-top: 90px;
+          line-height: 0;
+      }
+    }
