@@ -13,6 +13,9 @@ body{
     background-color: #23231E;
     width: 100%;
   }
+  .active {
+      color: chartreuse;
+  }
   .logo{
     background: url("../Images/rng-logo-large.png") no-repeat;
     background-size: contain;
