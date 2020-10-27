@@ -1,7 +1,8 @@
 function scrollNav() {
+    console.log("here")
     $(".menu a").click(function(){
-        $(".active").removeClass("active");
-        $(this).addClass("active");
+        $(".active").addClass("active");
+        $(this).siblings().removeClass("active");
     
     $('html, body').stop().animate({
         scrollTop: $($(this).attr('href')).offset().top - 160

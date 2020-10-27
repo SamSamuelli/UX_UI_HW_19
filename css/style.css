@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -12,9 +15,6 @@ body{
     align-items: center;
     background-color: #23231E;
     width: 100%;
-  }
-  .active {
-      color: chartreuse;
   }
   .logo{
     background: url("../Images/rng-logo-large.png") no-repeat;
@@ -37,6 +37,9 @@ body{
     transition: color 0.3s;
     text-transform: uppercase;
   }
+  a:active {
+    color: #866552;
+}
   .header{
     width: 100%;
     height: 450px;
@@ -275,6 +278,9 @@ body{
     justify-content: center;
     padding-top: 20px;
 
+  }
+  .socialMedia i:hover {
+    color: chartreuse;
   }
 
 
