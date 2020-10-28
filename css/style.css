@@ -189,7 +189,6 @@ body{
     border: none;
     width: 120pt;
     color: #F5F5F5;
-    filter: drop-shadow(0 0 0.15rem #4E473A);
     padding: 20px;
     text-align: center;
     text-decoration: none;
@@ -203,7 +202,7 @@ body{
   .learnButton:hover {
     background-color: #D2C8BE;
     color: #23231E;
-    filter: drop-shadow(0 0 0.25rem #4E473A);
+    filter: drop-shadow(0 0 0.10rem #4E473A);
   }
   .row {
     display: flex;
@@ -251,6 +250,9 @@ body{
     background-image: url(../Images/roaming\ chef.png);
     cursor: pointer;
   }
+  #roamingChef:hover {
+    filter: drop-shadow(0 0 0.10rem #4E473A);
+  }
   #comingSoon{
     grid-area: comingSoon;
     cursor: pointer;
@@ -259,10 +261,18 @@ body{
     height: 250px;
     width: 350px;
   }
+  #comingSoon:hover img {
+    height: 250px;
+    width: 350px;
+    filter: drop-shadow(0 0 0.10rem #4E473A);
+  }
   #dhs {
     grid-area: dhs;
     background-image: url(../Images/dhs-tile.png);
     cursor: pointer;
+  }
+  #dhs:hover {
+    filter: drop-shadow(0 0 0.10rem #4E473A);
   }
   #globetrotter {
     grid-area: globetrotter;
@@ -272,8 +282,13 @@ body{
     height: 250px;
     width: 350px;
   }
-  .text-block {
-    position: relative;
+  #globetrotter:hover img {
+    height: 250px;
+    width: 350px;
+    filter: drop-shadow(0 0 0.10rem #4E473A);
+  }
+  .overlay {
+    display: grid;
   }
   #roamingChef img .text-block {
     position: absolute;
@@ -295,10 +310,9 @@ body{
     text-align: center;
     justify-content: center;
     padding-top: 20px;
-
   }
-  .socialMedia i:hover {
-    color: chartreuse;
+  .socialMedia:hover i {
+    color: #866552;
   }
 
 
