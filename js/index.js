@@ -1,7 +1,8 @@
 function scrollNav() {
     console.log("here")
     $(".menu a").click(function(){
-        $(".active").addClass("active");
+        console.log( $(this) )
+        $(this).addClass("active");        
         $(this).siblings().removeClass("active");
     
     $('html, body').stop().animate({
